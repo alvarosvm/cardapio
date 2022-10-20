@@ -1,0 +1,53 @@
+Var
+
+continuar,produto:caractere
+valoruni,valorporprodunit,totpedido:real
+quantidade:inteiro
+cardapio:caractere
+Inicio
+
+totpedido <-0
+continuar <- "n"
+escreval("----------------------LISTA DE COMPRAS OZZY----------------------")
+escreval("  ")
+Escreval("Deseja ver o cardapio? s/n ->")
+leia(cardapio)
+se (cardapio="s") entao
+escreval("~ CARDÁPIO PIZZAS ~")
+escreval ("  ")
+escreval("PIZZA DE MUSSARELA    R$25")
+escreval("PIZZA DE CALABRESA    R$25")
+escreval("PIZZA DE PORTUGUESA   R$30")
+escreval("PIZZA DE AUSTRALIANA  R$35")
+escreval("METADE MUSSA/CALABRE  R$30")
+escreval ("  ")
+escreval("~ CARDÁPIO DE REFRIGERANTES ~")
+escreval("  ")
+escreval("DOLLY GUARANÁ   R$5")
+escreval("COCA COLA       R$10")
+escreval("FANTA           R$7")
+escreval("SUKITA          R$6")
+escreval ("  ")
+fimse
+escreva("Deseja incluir um item ? s/n -> ")
+leia(continuar)
+limpatela
+enquanto (continuar ="s") faca
+   escreval("  ")
+   escreva ("Digite o produto desejado -> ")
+   leia(produto)
+   escreva("Qual é o valor unitário do produto ? R$")
+   leia (valoruni)
+   escreva ("Quantidade: ")
+   leia(quantidade)
+   valorporprodunit <- valoruni*quantidade //soma total do valor de um item da lista recebe o preço unitario vezes a quantidade desejada
+   totpedido <- totpedido + valorporprodunit // total de pedido recebe ele mesmo "0" mais a soma total do valor de um item da lista
+   escreval("  ")
+   escreval("_________________________________________________________________")
+   escreva("Deseja incluir outro item ?s/n ")
+   leia(continuar)
+fimenquanto
+escreval("  ")
+escreval("O valor total de pedidos é -> R$",totpedido)
+
+Fimalgoritmo
