@@ -1,0 +1,27 @@
+var
+
+cardapio:caractere
+
+inicio
+
+cardapio <- "n"
+
+Escreval("Deseja ver o cardapio? s/n ->")
+leia(cardapio)
+se (cardapio="s") entao
+escreval("~ CARDÁPIO PIZZAS ~")
+escreval ("  ")
+escreval("PIZZA DE MUSSARELA    R$25")
+escreval("PIZZA DE CALABRESA    R$25")
+escreval("PIZZA DE PORTUGUESA   R$30")
+escreval("PIZZA DE AUSTRALIANA  R$35")
+escreval("METADE MUSSA/CALABRE  R$30")
+escreval("-----------------------------------------------------------------")
+escreval("~ CARDÁPIO DE REFRIGERANTES ~")
+escreval("  ")
+escreval("DOLLY GUARANÁ   R$5")
+escreval("COCA COLA       R$10")
+escreval("FANTA           R$7")
+escreval("SUKITA          R$6")
+escreval("-----------------------------------------------------------------")
+fimse
